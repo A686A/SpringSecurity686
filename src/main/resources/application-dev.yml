@@ -1,0 +1,16 @@
+server:
+  port: 8084
+  # thymeleaf  request path
+#mybatis-plus:
+#  mapper-locations: classpath*:/mapper/**/*.xml
+spring:
+  # spring batch   initial database，file in jar
+  sql:
+    init:
+      schema-locations: classpath:org/springframework/batch/core/schema-mysql.sql
+      #mode: always
+      mode: never
+#batch create file path
+job:
+  data:
+    path: D:/demo
